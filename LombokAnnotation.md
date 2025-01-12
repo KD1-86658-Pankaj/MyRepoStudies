@@ -115,6 +115,5 @@ Overusing Lombok annotations like `@Data` or `@Getter` can lead to code clutter.
 
 ---
 
-Photo by [Tim van der Kuip](https://unsplash.com/@timvdk) on Unsplash.
 
 **Thank You!**
