@@ -112,3 +112,27 @@ Access modifiers are keywords that control the visibility and accessibility of c
 - Use **protected** or equivalents for extensibility in inheritance.
 - Use **public** for external access like APIs.
 - Be cautious with **default/internal** access, as it might expose more than intended.
+- 
+
+### Operator Precedence Table
+
+| Precedence Level | Operators                           | Description                             | Associativity   |
+|------------------|-------------------------------------|-----------------------------------------|-----------------|
+| 1                | `::`                                | Scope resolution                        | Left-to-right   |
+| 2                | `++` `--`                           | Unary post-increment and post-decrement | Left-to-right   |
+| 3                | `++` `--` `+` `-` `!` `~` `*` `&`   | Unary pre-increment, pre-decrement, unary plus, unary minus, logical NOT, bitwise NOT, dereference, address-of | Right-to-left   |
+| 4                | `.*` `->*`                          | Pointer-to-member                       | Left-to-right   |
+| 5                | `*` `/` `%`                         | Multiplication, division, modulus       | Left-to-right   |
+| 6                | `+` `-`                             | Addition, subtraction                   | Left-to-right   |
+| 7                | `<<` `>>`                           | Bitwise shift left, bitwise shift right | Left-to-right   |
+| 8                | `<` `<=` `>` `>=`                   | Relational less, less or equal, greater, greater or equal | Left-to-right   |
+| 9                | `==` `!=`                           | Equality, inequality                    | Left-to-right   |
+| 10               | `&`                                 | Bitwise AND                             | Left-to-right   |
+| 11               | `^`                                 | Bitwise XOR                             | Left-to-right   |
+| 12               | `|`                                 | Bitwise OR                              | Left-to-right   |
+| 13               | `&&`                                | Logical AND                             | Left-to-right   |
+| 14               | `||`                                | Logical OR                              | Left-to-right   |
+| 15               | `?:`                                | Ternary conditional                     | Right-to-left   |
+| 16               | `=` `+=` `-=` `*=` `/=` `%=` `<<=` `>>=` `&=` `|=` `^=` | Assignment and compound assignment | Right-to-left   |
+| 17               | `,`                                 | Comma                                   | Left-to-right   |
+
